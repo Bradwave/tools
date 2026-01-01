@@ -1,115 +1,179 @@
 const projects = [
     {
         name: "TimeFreq",
-        path: "../timefreq/index.html",
-        description: "Advanced time-frequency analysis tool supporting STFT, Wigner-Ville, and Chirplet transforms with real-time audio synthesis.",
-        tags: ["physics", "signals", "math"],
-        icon: "../timefreq/assets/favicon.svg"
+        path: "https://timefreq.matephis.com",
+        description: "A time-frequency signal analysis tool.",
+        tags: ["math", "physics", "educational", "fourier-analysis", "time-frequency-analysis"],
+        icon: "https://timefreq.matephis.com/assets/favicon.svg",
+        showApp: true
     },
     {
         name: "Fourier 3D",
-        path: "../fourier3d/index.html",
-        description: "Visualization of Fourier transforms in 3D space. Explore complex signals, winding plots, and frequency components.",
-        tags: ["physics", "3d", "fourier"],
-        icon: "../fourier3d/assets/favicon.svg"
+        path: "https://fourier3d.matephis.com",
+        description: "An interactive visualization to explore Fourier analysis (also with a 3D plot of the complex transform curve).",
+        tags: ["math", "physics", "educational", "fourier-transform"],
+        icon: "https://fourier3d.matephis.com/assets/favicon.svg",
+        showApp: true
     },
     {
         name: "FT Filter",
-        path: "../ftfilter/index.html",
+        path: "https://ftfilter.matephis.com",
         description: "Interactive signal filtering in the frequency domain. Design custom filters and see their effect on complex waveforms.",
         tags: ["physics", "signals", "fourier"],
-        icon: "../ftfilter/imgs/favicon.svg"
+        icon: "https://ftfilter.matephis.com/imgs/favicon.svg",
+        showApp: true
     },
     {
         name: "Inertia",
-        path: "../inertia/index.html",
+        path: "https://bradwave.github.io/inertia/",
         description: "Kinematics and motion simulator. Plot position, velocity, and acceleration of a point mass in real-time.",
         tags: ["physics", "simulation", "mechanics"],
-        icon: "../inertia/imgs/icon.svg"
+        icon: "https://bradwave.github.io/inertia/imgs/icon.svg",
+        showApp: true
     },
     {
         name: "Gabor",
-        path: "../gabor/index.html",
+        path: "https://bradwave.github.io/gabor/",
         description: "Analysis of non-stationary signals using the Gabor Transform (Windowed Fourier Transform).",
         tags: ["math", "signals", "fourier"],
-        icon: "../gabor/imgs/icon.png"
+        icon: "https://bradwave.github.io/gabor/imgs/icon.png",
+        showApp: true
     },
     {
         name: "Julia Set",
-        path: "../juliaset/index.html",
+        path: "https://juliaset.matephis.com",
         description: "Fractal explorer for Julia and Mandelbrot sets with interactive iteration control.",
-        tags: ["math", "fractals", "visuals"],
-        icon: "../juliaset/images/icon.png"
+        tags: ["math", "fractals"],
+        icon: "https://juliaset.matephis.com/images/icon.png",
+        showApp: true
     },
     {
         name: "Draw XY",
-        path: "../drawxy/index.html",
+        path: "https://drawxy.matephis.com",
         description: "Minimalist vector drawing tool with precision coordinate editing and export capabilities.",
         tags: ["tools", "graphics", "vectors"],
-        icon: "../drawxy/assets/favicon.svg"
+        icon: "https://drawxy.matephis.com/assets/favicon.svg",
+        showApp: true
     },
     {
         name: "Drawing Fourier",
-        path: "../drawingfourier/index.html",
+        path: "https://drawingfourier.matephis.com",
         description: "Watch complex epicycles reconstruct arbitrary shapes using the power of Fourier Series.",
-        tags: ["math", "fourier", "visuals"],
-        icon: "../drawingfourier/assets/icons/logo.svg"
+        tags: ["math", "fourier"],
+        icon: "https://drawingfourier.matephis.com/assets/icons/logo.svg",
+        showApp: true
     },
     {
         name: "Freehand Fourier",
-        path: "../freehandfourier/index.html",
+        path: "https://freehandfourier.matephis.com",
         description: "Draw anything freehand and see the Fourier approximation in real-time.",
-        tags: ["math", "fourier", "visuals"],
-        icon: "../freehandfourier/imgs/icon.svg"
+        tags: ["math", "fourier"],
+        icon: "https://freehandfourier.matephis.com/imgs/icon.svg",
+        showApp: true
     },
     {
-        name: "AttractHM",
-        path: "../attracthm/index.html",
+        name: "AttracThm",
+        path: "https://attracthm.matephis.com",
         description: "Visualization of strange attractors and chaotic dynamical systems.",
         tags: ["physics", "chaos", "math"],
-        icon: "../attracthm/favicon.svg"
+        icon: "https://attracthm.matephis.com/favicon.svg",
+        showApp: true
     },
     {
         name: "Chaos Game",
-        path: "../chaosgame/index.html",
+        path: "https://chaosgame.matephis.com",
         description: "Fractal generation through the chaos game algorithm. Iterative mathematical art.",
         tags: ["math", "fractals", "algorithms"],
-        icon: "../chaosgame/images/icon.png"
+        icon: "https://chaosgame.matephis.com/images/icon.png",
+        showApp: true
     },
     {
         name: "ComplExp",
-        path: "../complexp/index.html",
+        path: "https://complexp.matephis.com",
         description: "An explorer for complex numbers and conformal mappings.",
-        tags: ["math", "visuals", "complex"],
-        icon: "../complexp/imgs/icon.svg"
+        tags: ["math", "complex"],
+        icon: "https://complexp.matephis.com/imgs/icon.svg",
+        showApp: true
     },
     {
         name: "Dynagraph",
-        path: "../dynagraph/index.html",
+        path: "https://dynagraph.matephis.com",
         description: "Dynamic plotting tool for functional analysis and graphing.",
         tags: ["math", "tools", "graphing"],
-        icon: ""
+        icon: "",
+        showApp: false
     },
     {
         name: "E-Field",
-        path: "../efield/index.html",
-        description: "Simulation of electric fields and potentials for multiple point charges.",
-        tags: ["physics", "electromagnetism", "simulation"],
-        icon: "../efield/imgs/icon.svg"
+        path: "https://bradwave.github.io/efield/",
+        description: "An electric field simulation.",
+        tags: ["educational", "electrostatics", "electric-field", "physics", "simulation"],
+        icon: "https://bradwave.github.io/efield/imgs/icon.svg",
+        showApp: true
     },
     {
         name: "TrigonoPoly",
-        path: "../trigonopoly/index.html",
+        path: "https://trigonopoly.matephis.com",
         description: "Interactive unit circle and trigonometric function exploration.",
         tags: ["math", "trigonometry", "education"],
-        icon: ""
+        icon: "",
+        showApp: true
     },
     {
         name: "Stuff",
-        path: "../stuff/index.html",
-        description: "A sandbox for various tools, question extractors, and experimental components.",
-        tags: ["tools", "meta", "sandbox"],
-        icon: "../stuff/assets/favicon.svg"
+        path: "https://bradwave.github.io/stuff/index.html",
+        description: "Robe, cose, strumenti.",
+        tags: ["tools", "meta", "sandbox", "stuff"],
+        icon: "https://bradwave.github.io/stuff/assets/favicon.svg",
+        showApp: true
+    },
+    {
+        name: "emwave",
+        path: "https://bradwave.github.io/emwave/",
+        description: "Real-time simulation of electromagnetic wave propagation caused by accelerating particle.",
+        tags: ["light", "physics", "electromagnetic-wave"],
+        icon: "https://bradwave.github.io/emwave/imgs/icon.png",
+        showApp: true
+    },
+    {
+        name: "reactiontime",
+        path: "https://bradwave.github.io/reactiontime/",
+        description: "A super minimal app to measure reaction times.",
+        tags: ["reaction-time"],
+        icon: "https://bradwave.github.io/reactiontime/imgs/timelapse_FILL0_wght400_GRAD0_opsz24.svg",
+        showApp: true
+    },
+    {
+        name: "PianoFreq",
+        path: "https://bradwave.github.io/PianoFreq/",
+        description: "A piano tuning application for educational purposes.",
+        tags: ["mathematics", "educational", "piano-tuning-application"],
+        icon: "https://bradwave.github.io/PianoFreq/imgs/icon.png",
+        showApp: true
+    },
+    {
+        name: "DiophEq",
+        path: "https://bradwave.github.io/DiophEq/",
+        description: "An interactive geometric visualization of the Diophantine equation ax+by=c and its integer solutions.",
+        tags: ["education", "math", "interactive"],
+        icon: "https://bradwave.github.io/DiophEq/imgs/icon.png",
+        showApp: true
+    },
+    {
+        name: "KleinInt",
+        path: "https://bradwave.github.io/KleinInt/",
+        description: "An interactive graphical interpretation of the continued fraction approximation of irrational numbers, as imagined by Klein, in the case of square roots.",
+        tags: ["math", "interactive", "educational"],
+        icon: "https://bradwave.github.io/KleinInt/imgs/icon.png",
+        showApp: true
+    },
+    {
+        name: "turingpattern",
+        path: "https://bradwave.github.io/turingpattern/",
+        description: "A brief dissertation (in Italian) of Turing patterns and morphogenesis.",
+        tags: ["mathematics", "turing", "morphogenesis", "turing-pattern"],
+        icon: "https://bradwave.github.io/turingpattern/imgs/icon.png",
+        showApp: true
     }
 ];
 
@@ -117,14 +181,18 @@ const grid = document.getElementById('projects-grid');
 const searchInput = document.getElementById('search-input');
 
 function createCard(project) {
-    const card = document.createElement('a');
-    card.href = project.path;
-    card.className = 'card';
-    
+    const card = document.createElement(project.showApp ? 'a' : 'div');
+    if (project.showApp) {
+        card.href = project.path;
+    }
+    card.className = 'card' + (project.showApp ? '' : ' disabled-card');
+
     const tagsHtml = project.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-    
+
+    const opacity = project.showApp ? 1 : 0.25;
+
     card.innerHTML = `
-        <div class="card-header">
+        <div class="card-header" style="opacity: ${opacity}">
             <div class="card-icon">
                 <img src="${project.icon}" alt="" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <span class="material-symbols-outlined" style="display:none">category</span>
@@ -136,20 +204,20 @@ function createCard(project) {
             ${tagsHtml}
         </div>
     `;
-    
+
     return card;
 }
 
 function renderProjects(filter = '') {
     grid.innerHTML = '';
     const query = filter.toLowerCase();
-    
+
     const filtered = projects.filter(p => {
-        return p.name.toLowerCase().includes(query) || 
-               p.description.toLowerCase().includes(query) || 
-               p.tags.some(t => t.toLowerCase().includes(query));
+        return p.name.toLowerCase().includes(query) ||
+            p.description.toLowerCase().includes(query) ||
+            p.tags.some(t => t.toLowerCase().includes(query));
     });
-    
+
     filtered.forEach(p => {
         grid.appendChild(createCard(p));
     });

@@ -35,21 +35,21 @@ body {
   min-height: 100vh;
 }
 
-/* Dotted background matching matephis */
+/* Square background pattern inspired by technical graph paper */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
   height: 100%;
-  background-image: radial-gradient(#bfbfbf 1.1px, transparent 1.1px);
-  background-size: 24px 24px;
-  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  background-image: 
+    linear-gradient(var(--bg2) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg2) 1px, transparent 1px);
+  background-size: 40px 40px;
   z-index: -1;
+  opacity: 0.5;
   pointer-events: none;
-  opacity: 0.6;
 }
 
 .container {
@@ -144,6 +144,17 @@ header {
   transform: translateY(-4px);
   border-color: var(--brand);
   box-shadow: var(--shadow-md);
+}
+
+.card.disabled-card {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.card.disabled-card:hover {
+  transform: none;
+  border-color: var(--border);
+  box-shadow: var(--shadow-sm);
 }
 
 .card-header {
